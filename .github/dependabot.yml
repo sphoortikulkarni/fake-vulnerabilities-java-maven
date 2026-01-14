@@ -4,8 +4,7 @@ updates:
   - package-ecosystem: "maven"
     directory: "/"            # location of pom.xml
     schedule:
-      interval: "weekly"      # daily | weekly | monthly
-      day: "monday"
+      interval: "daily"      # daily | weekly | monthly
       time: "02:00"
     open-pull-requests-limit: 10
     reviewers:
