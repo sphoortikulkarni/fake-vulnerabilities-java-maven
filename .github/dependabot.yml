@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # --- Maven Dependencies ---
+  - package-ecosystem: "maven"
+    directory: "/"            # location of pom.xml
+    schedule:
+      interval: "weekly"      # daily | weekly | monthly
+      day: "monday"
+      time: "02:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - sphoortikulkarni
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "deps"
+    allow:
+      - dependency-type: "direct"
+      - dependency-type: "all"
+
+  # --- GitHub Actions ---
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
