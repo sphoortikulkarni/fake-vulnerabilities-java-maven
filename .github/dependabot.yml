@@ -5,7 +5,7 @@ updates:
     directory: "/"            # location of pom.xml
     schedule:
       interval: "daily"      # daily | weekly | monthly
-      time: "02:00"
+      time: "22:45"
     open-pull-requests-limit: 10
     reviewers:
       - sphoortikulkarni
